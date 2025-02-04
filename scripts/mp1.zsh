@@ -11,5 +11,13 @@ done;
 
 cd ../scripts
 
-echo 'HELLO!'
+. myenv/bin/activate
+
+python concat.py
+
+cd ../
+
+git add .
+git commit -m "scheduled commit"
+git push
 
